@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -12,7 +13,7 @@
     "build": "yarn sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass" : "sass --watch src/styles/sass:src/styles/css",
-    "sass:build": "sass — update src/styles/sass:src/styles/css"
+    "sass": "sass --watch src/styles/sass:src/styles/css",
+    "sass:build": "sass --update src/styles/sass:src/styles/css"
   }
 }

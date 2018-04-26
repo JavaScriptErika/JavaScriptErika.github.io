@@ -1,7 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: blue; }
+  font-family: sans-serif; }
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1; }
 
 /*# sourceMappingURL=index.css.map */
