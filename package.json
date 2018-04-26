@@ -9,8 +9,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass" : "sass --watch src/styles/sass:src/styles/css",
+    "sass:build": "sass — update src/styles/sass:src/styles/css"
   }
 }
