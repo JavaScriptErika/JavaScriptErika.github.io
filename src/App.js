@@ -1,10 +1,28 @@
 import React, { Component } from 'react'
 import Menu from './Components/Menu'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import sketch from './Components/sketch'
+import P5Wrapper from 'react-p5-wrapper'
 
 
-const App = () => (
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      clicked: true
+    }
+  }
+
+
+  handleClick = () => {
+    this.setState({
+      clicked: true
+    })
+  }
+  render() {
+    return (
   <div>
+    <P5Wrapper clicked = {this.state.click} onClick={this.handleClick} sketch={sketch} />
   <Router>
     <div>
   <Menu />
@@ -14,7 +32,9 @@ const App = () => (
     </div>
   </Router>
   </div>
-)
+    )
+  }
+}
 
 
 const Home = () => (
