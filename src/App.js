@@ -1,41 +1,38 @@
-import React, { Component } from 'react'
-import Menu from './Components/Menu'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import sketch from './Components/sketch'
-import P5Wrapper from 'react-p5-wrapper'
-
+import React, { Component } from 'react';
+import Menu from './Components/Menu';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import sketch from './Components/Sketch';
+import P5Wrapper from 'react-p5-wrapper';
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       clicked: true
-    }
+    };
   }
-
 
   handleClick = () => {
     this.setState({
       clicked: true
-    })
-  }
+    });
+  };
   render() {
     return (
-  <div>
-    <P5Wrapper clicked = {this.state.click} onClick={this.handleClick} sketch={sketch} />
-  <Router>
-    <div>
-  <Menu />
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
-    <Route path="/topics" component={Topics} />
-    </div>
-  </Router>
-  </div>
-    )
+      <div>
+        <P5Wrapper clicked={this.state.click} onClick={this.handleClick} sketch={sketch} />
+        <Router>
+          <div>
+            <Menu />
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/topics" component={Topics} />
+          </div>
+        </Router>
+      </div>
+    );
   }
 }
-
 
 const Home = () => (
   <div>
@@ -53,6 +50,6 @@ const Topics = () => (
   <div>
     <h2>Topics</h2>
   </div>
-)
+);
 
-export default App
+export default App;
