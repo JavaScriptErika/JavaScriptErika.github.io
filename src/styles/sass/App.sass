@@ -66,6 +66,7 @@ a
   height: 200px
   margin: 3rem auto 0rem
   text-align: center
+  cursor: pointer
 
 .blob
   position: absolute
@@ -102,28 +103,21 @@ a
 .home
   transform: scale(.9)
   z-index: -1
-  transition: transform 800ms ease-in-out
+  transition: transform 500ms ease-in-out
 
-.nav-wrap:hover .portfolio,
-.nav-wrap:active .portfolio,
-.nav-wrap:focus .portfolio
-  transform: translateX(117px) scale(.8)
-  @media screen and (min-width: 426px)
-    transform: translateX(140px) scale(.8)
-
-.nav-wrap:hover .home,
-.nav-wrap:active .home,
-.nav-wrap:focus .home
+.menuActiveLeft
   transform: translateX(-117px) scale(.8)
   @media screen and (min-width: 426px)
     transform: translateX(-140px) scale(.8)
 
-.menu
+.menuActiveRight
+  transform: translateX(117px) scale(.8)
+  @media screen and (min-width: 426px)
+    transform: translateX(140px) scale(.8)
+
+.menuPulse
   animation: menu-pulse 1s ease-in-out alternate infinite
 
-.nav-wrap:hover .menu
-  animation-play-state: paused
-  
 @keyframes menu-pulse
   100% 
     transform: scale(.95)

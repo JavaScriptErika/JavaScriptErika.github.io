@@ -4,10 +4,19 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Sketch from './Components/Sketch';
 import P5Wrapper from 'react-p5-wrapper';
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isMenuClicked: false
+    };
   }
+
+  handleMenuClick = () => {
+    this.setState(prevState => ({
+      isMenuClicked: !prevState.isMenuClicked
+    }));
+  };
 
   render() {
     return (
@@ -15,7 +24,7 @@ class App extends React.Component {
         <P5Wrapper sketch={Sketch} />
         <Router>
           <div>
-            <Menu />
+            <Menu onMenuClick={this.handleMenuClick} isClicked={this.state.isMenuClicked} />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/topics" component={Topics} />
