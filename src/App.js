@@ -7,20 +7,12 @@ import P5Wrapper from 'react-p5-wrapper';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      clicked: true
-    };
   }
 
-  handleClick = () => {
-    this.setState({
-      clicked: true
-    });
-  };
   render() {
     return (
       <div>
-        <P5Wrapper clicked={this.state.click} onClick={this.handleClick} sketch={Sketch} />
+        <P5Wrapper sketch={Sketch} />
         <Router>
           <div>
             <Menu />
