@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Home = () => {
-  return (
-    <div class="name">
-      <h1>Erika Ritter</h1>
-      <h4>
-        I <span id="emoji">💜</span> the web &amp; JS
-      </h4>
-    </div>
-  );
-};
+class Home extends Component {
+  componentDidMount() {
+    this.interval = setInterval(this.props.setemojiIndex, 3000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return (
+      <div className="name">
+        <h1>Erika Ritter</h1>
+        <h4>
+          I <span id="emoji">{this.props.emojiArr[this.props.emojiArrI]}</span> the web &amp; JS
+        </h4>
+      </div>
+    );
+  }
+}
 
 export default Home;

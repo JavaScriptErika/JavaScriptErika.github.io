@@ -9,7 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMenuClicked: false
+      isMenuClicked: false,
+      emojiArrIndex: 0
     };
   }
 
@@ -19,6 +20,16 @@ class App extends Component {
     }));
   };
 
+  generateRandomNum = (minimum = 0, maximum = emojiArray.length - 1) => {
+    return Math.floor(Math.random() * (maximum - minimum + 1));
+  };
+
+  setNumToEmojiIndex = () => {
+    this.setState({
+      emojiArrIndex: this.generateRandomNum()
+    });
+  };
+
   render() {
     return (
       <div>
@@ -26,7 +37,17 @@ class App extends Component {
         <Router>
           <div>
             <Menu onMenuClick={this.handleMenuClick} isClicked={this.state.isMenuClicked} />
-            <Route exact path="/" component={Home} />
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Home
+                  emojiArr={emojiArray}
+                  setemojiIndex={this.setNumToEmojiIndex}
+                  emojiArrI={this.state.emojiArrIndex}
+                />
+              )}
+            />
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
@@ -37,22 +58,20 @@ class App extends Component {
   }
 }
 
+const emojiArray = [...'💜🍰🍪🥨🥞🍭🍬🍿🧡🍩🌮🍫🍕🍦🍱🍧'];
 const About = () => (
   <div>
     <h2>About</h2>
   </div>
 );
-
 const Portfolio = () => (
   <div>
     <h2>Portfolio</h2>
   </div>
 );
-
 const Contact = () => (
   <div>
     <h2>Contact</h2>
   </div>
 );
-
 export default App;
