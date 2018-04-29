@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Menu = props => {
@@ -10,12 +10,12 @@ const Menu = props => {
             <p>menu</p>
           </div>
           <div className={props.isClicked ? 'menuActiveLeft blob home' : 'blob home'}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/">home</Link>
+            <Link to="/about">about</Link>
           </div>
           <div className={props.isClicked ? 'menuActiveRight blob portfolio' : 'blob portfolio'}>
-            <Link to="/topics">Topics</Link>
-            <a href="">contact</a>
+            <Link to="/portfolio">portfolio</Link>
+            <Link to="/contact">contact</Link>
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Menu from './Components/Menu';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Sketch from './Components/Sketch';
 import P5Wrapper from 'react-p5-wrapper';
+import Home from './Components/Home';
+import Menu from './Components/Menu';
+import Sketch from './Components/Sketch';
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +28,8 @@ class App extends Component {
             <Menu onMenuClick={this.handleMenuClick} isClicked={this.state.isMenuClicked} />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
           </div>
         </Router>
       </div>
@@ -35,21 +37,21 @@ class App extends Component {
   }
 }
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
-
 const About = () => (
   <div>
     <h2>About</h2>
   </div>
 );
 
-const Topics = () => (
+const Portfolio = () => (
   <div>
-    <h2>Topics</h2>
+    <h2>Portfolio</h2>
+  </div>
+);
+
+const Contact = () => (
+  <div>
+    <h2>Contact</h2>
   </div>
 );
 
