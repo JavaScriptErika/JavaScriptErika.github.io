@@ -1,5 +1,3 @@
-import 'p5/lib/addons/p5.dom';
-
 export default function sketch(p) {
   const balls = [];
 
@@ -47,7 +45,6 @@ export default function sketch(p) {
 
     display = () => {
       p.push();
-      // blendMode(MULTIPLY);
       p.translate(this.x, this.y);
       p.rotate(this.angle);
       p.fill(this.redColorValue, 40, 225, 160);
