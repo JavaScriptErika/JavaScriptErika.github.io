@@ -1,4 +1,6 @@
 /* Variables */
+/* END Variables */
+/* Elements */
 body {
   margin: 0;
   padding: 0;
@@ -8,9 +10,34 @@ canvas {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -1; }
+
+svg {
   position: absolute; }
 
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 7rem; }
+
+h4 {
+  font-size: 3rem; }
+
+h1, h4 {
+  text-shadow: 5px 5px rgba(64, 224, 208, 0.7); }
+
+h4, p {
+  margin: 0; }
+
+p {
+  font-size: 1.5rem; }
+
+a {
+  text-decoration: none; }
+
+::selection {
+  background-color: turquoise; }
+
+/* END Elements */
 /* NAV */
 .gooey-effect-wrapper {
   filter: url("#goo");
@@ -90,5 +117,6 @@ canvas {
 @keyframes menu-pulse {
   100% {
     transform: scale(0.95); } }
+/* END NAV */
 
 /*# sourceMappingURL=App.css.map */
