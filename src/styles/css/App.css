@@ -46,9 +46,11 @@ a {
   text-decoration: none;
   color: #5720cb;
   transition: all 300ms ease;
+  padding: 0.5rem;
   border-radius: 0.5rem; }
   a:hover {
-    background-color: turquoise; }
+    background-color: #dd27dd;
+    opacity: 0.5; }
   a:active, a:visited {
     color: white; }
 
@@ -70,6 +72,11 @@ a {
   height: 117px;
   left: 36%;
   border-radius: 50%; }
+  .blob a {
+    padding: 0; }
+    .blob a:hover {
+      background-color: turquoise;
+      color: #dd27dd; }
   .blob a,
   .blob p {
     display: block;
@@ -93,10 +100,6 @@ a {
 .home a,
 .portfolio a {
   margin: 1.5rem; }
-  @media screen and (min-width: 426px) {
-    .home a,
-    .portfolio a {
-      margin: 2rem; } }
 
 .portfolio,
 .home {

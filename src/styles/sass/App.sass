@@ -67,9 +67,11 @@ a
   text-decoration: none
   color: darken($dark-purple, 5%)
   transition: all 300ms ease
+  padding: .5rem
   border-radius: .5rem
   &:hover
-    background-color: $teal
+    background-color: $pink
+    opacity: .5
   &:active,
   &:visited
     color: white
@@ -95,6 +97,11 @@ a
   height: 117px
   left: 36%
   border-radius: 50%
+  a
+    padding: 0
+    &:hover
+      background-color: $teal
+      color: $pink
   a,
   p
     display: block
@@ -116,8 +123,6 @@ a
 .home a,
 .portfolio a
   margin: 1.5rem
-  @media screen and (min-width: 426px)
-    margin: 2rem
 
 .portfolio,
 .home
