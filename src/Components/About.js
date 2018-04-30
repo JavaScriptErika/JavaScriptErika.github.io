@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Circles from './Circles';
 import ccLogo from './../images/cc-logo.svg';
 
 class About extends Component {
@@ -16,14 +17,7 @@ class About extends Component {
         <div className="title about">
           <h1>About</h1>
         </div>
-        <div className="about-intro">
-          <h4>I'm a developer who loves creative code.</h4>
-        </div>
-        <div className="about-circle-wrapper">
-          <div className={this.props.isScrolling ? 'left-circle left-circle-enter' : 'left-circle'} />
-          <div className={this.props.isScrolling ? 'right-circle right-circle-enter' : 'right-circle'} />
-        </div>
-
+        <Circles description={`I'm a developer who loves creative code.`} isScrolling={this.props.isScrolling} />
         <div className="code-about-description">
           <pre>
             <code>
@@ -124,6 +118,7 @@ class About extends Component {
             </div>
           </div>
         </div>
+        <Circles description={`Code is art, the world's my canvas`} isScrolling={this.props.isScrolling} />
       </div>
     );
   }
