@@ -11,6 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       isMenuClicked: false,
+      isScrolling: false,
       emojiArrIndex: 0
     };
   }
@@ -31,6 +32,18 @@ class App extends Component {
     });
   };
 
+  handleScroll = e => {
+    if (window.scrollY >= 20) {
+      this.setState({
+        isScrolling: true
+      });
+    } else {
+      this.setState({
+        isScrolling: false
+      });
+    }
+  };
+
   render() {
     return (
       <div>
@@ -49,7 +62,10 @@ class App extends Component {
                 />
               )}
             />
-            <Route path="/about" component={About} />
+            <Route
+              path="/about"
+              render={props => <About isScrolling={this.state.isScrolling} onScroll={this.handleScroll} />}
+            />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
           </div>

@@ -145,7 +145,7 @@ a {
 .about-circle-wrapper {
   margin-top: 10rem;
   position: relative;
-  height: 20px;
+  height: 400px;
   width: 100%;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
@@ -164,8 +164,8 @@ a {
   @media screen and (min-width: 768px) {
     .left-circle,
     .right-circle {
-      width: 300px;
-      height: 300px; } }
+      width: 400px;
+      height: 400px; } }
 
 .left-circle {
   background: #dd27dd;
@@ -181,16 +181,16 @@ a {
   transform: translateX(-60vw); }
   @media screen and (min-width: 1024px) {
     .right-circle-enter {
-      transform: translateX(-55vw); } }
+      transform: translateX(-52vw); } }
 
 .left-circle-enter {
   transform: translateX(60vw); }
   @media screen and (min-width: 1024px) {
     .left-circle-enter {
-      transform: translateX(55vw); } }
+      transform: translateX(52vw); } }
 
 .about-intro {
-  position: relative;
+  position: absolute;
   width: 140px;
   margin-left: 50%;
   transform-origin: 0 0;
