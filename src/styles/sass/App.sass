@@ -6,6 +6,9 @@ $teal: rgb(64,224,208)
 $dark-purple: rgb(98, 39, 221)
 $medium-purple: rgb(163, 39, 221)
 
+//tones
+$dark-grey: #3f3f3f
+
 //universal
 $body-background: rgb(250, 250, 250)
 $body-font-color: #3f3f3f
@@ -125,9 +128,9 @@ a
 
 /* END NAV */
 
-/* Home Component */
+/* Shared Component Page Styles */
 
-.name
+.title
   h1
     font-size: 4rem
   h4
@@ -141,7 +144,7 @@ a
     h4
       font-size: 3rem
 
-.name
+.title
   margin-top: 4rem
   margin-bottom: 5rem
   font-family: 'Roboto', sans-serif
@@ -153,4 +156,91 @@ a
   @media screen and (min-width: 426px)
     padding-left: 10rem
 
-/* End Home Component */
+/* End Shared Component Page Styles */
+
+/* About Component */
+
+.about
+  margin-top: 0
+
+.about-circle-wrapper
+  margin-top: 10rem
+  position: relative
+  height: 20px
+  width: 100%
+  overflow: hidden
+  @media screen and (min-width: 768px)
+    margin-bottom: 4rem
+  
+.left-circle,
+.right-circle
+  position: absolute
+  border-radius: 50%
+  mix-blend-mode: multiply
+  opacity: .7
+  width: 200px
+  height: 200px
+  overflow: hidden
+  @media screen and (min-width: 768px)
+    width: 300px
+    height: 300px
+
+
+.left-circle
+  background: $pink
+  right: 100%
+  transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+.right-circle
+  background: $teal
+  left: 100%
+  transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+.right-circle-enter
+  transform: translateX(-60vw)
+  @media screen and (min-width: 1024px)
+    transform: translateX(-55vw)
+
+.left-circle-enter
+  transform: translateX(60vw)
+  @media screen and (min-width: 1024px)
+    transform: translateX(55vw)
+
+.about-intro
+  position: relative
+  width: 140px
+  margin-left: 50%
+  transform-origin: 0 0
+  transform: rotate(40deg)
+  font-size: 2rem
+  h4
+    line-height: .9
+      
+.code-about-description
+  background-color: rgba($dark-grey, .9)
+  @media screen and (min-width: 1024px)
+    margin: 0 auto
+    width: 50%
+  @media screen and (min-width: 1440px)
+    width: 40%
+  
+pre
+  background: rgba($dark-grey, .8)
+  border: 2px solid $medium-purple
+  color: $teal
+  page-break-inside: avoid
+  font-family: monospace
+  font-size: 1.1rem
+  line-height: 1.6
+  margin-bottom: 1.6rem
+  max-width: 100%
+  overflow: auto
+  padding-left: .1rem
+  display: block
+  word-wrap: break-word
+  span
+    color: lighten($pink, 20%)
+  span:not(:first-child)
+    padding-left: 1.5rem
+
+/*END About Component */

@@ -11,7 +11,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="name">
+      <div className="title">
         <h1>Erika Ritter</h1>
         <h4>
           I <span id="emoji">{this.props.emojiArr[this.props.emojiArrI]}</span> the web &amp; JS
