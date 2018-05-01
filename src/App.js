@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       isMenuClicked: false,
       isScrolling: false,
+      isPortfolioClicked: false,
       emojiArrIndex: 0
     };
   }
@@ -39,12 +40,7 @@ class App extends Component {
         isScrolling: true
       });
     }
-    if (window.scrollY < 20) {
-      this.setState({
-        isScrolling: false
-      });
-    }
-    if (window.scrollY > 2000) {
+    if (window.scrollY < 20 || window.scrollY > 1900) {
       this.setState({
         isScrolling: false
       });

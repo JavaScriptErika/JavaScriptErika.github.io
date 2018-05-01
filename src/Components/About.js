@@ -7,7 +7,7 @@ class About extends Component {
     window.addEventListener('scroll', this.props.onScroll, false);
   }
 
-  componentWillUmount() {
+  componentWillUnmount() {
     window.removeEventListener('scroll', this.props.onScroll, false);
   }
 
