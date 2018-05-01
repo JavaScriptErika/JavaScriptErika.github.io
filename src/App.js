@@ -4,6 +4,7 @@ import P5Wrapper from 'react-p5-wrapper';
 import About from './Components/About';
 import Home from './Components/Home';
 import Menu from './Components/Menu';
+import Portfolio from './Components/Portfolio';
 import Sketch from './Components/Sketch';
 
 class App extends Component {
@@ -82,11 +83,6 @@ class App extends Component {
 }
 
 const emojiArray = [...'💜🍰🍪🥨🥞🍭🍬🍿🧡🍩🌮🍫🍕🍦🍱🍧'];
-const Portfolio = () => (
-  <div>
-    <h2>Portfolio</h2>
-  </div>
-);
 const Contact = () => (
   <div>
     <h2>Contact</h2>

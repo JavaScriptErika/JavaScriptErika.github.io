@@ -29,10 +29,10 @@ class About extends Component {
               <span>cat_Mom</span>
               {`: '🐱🐱🐱🐱', `}
               <br />
-              <span>Fav_Foods</span>
+              <span>fav_Foods</span>
               {`: '🌯🍝🍦', `}
               <br />
-              <span>Soft_Skills</span>
+              <span>soft_Skills</span>
               {`: [
       'eager life-long learner',
       'active communicator',
