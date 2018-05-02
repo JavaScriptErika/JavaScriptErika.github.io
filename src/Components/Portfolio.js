@@ -7,60 +7,24 @@ const Portfolio = props => {
         <h1 onClick={() => props.onPortfolioClick()}>Portfolio</h1>
       </div>
       <div className="portfolio-wrap">
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle pink-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle pink-portfolio-circle">
           <p>This is my portfolio title</p>
           <p>Technologies used:</p>
           <p>Technologies used:</p>
         </div>
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle teal-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle teal-portfolio-circle">
           <p>This is my portfolio</p>
         </div>
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle purple-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle purple-portfolio-circle">
           <p>This is my portfolio</p>
         </div>
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle purple-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle purple-portfolio-circle">
           <p>This is my portfolio</p>
         </div>
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle teal-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle pink-portfolio-circle">
           <p>This is my portfolio</p>
         </div>
-        <div
-          className={
-            props.isPortfolioClicked
-              ? 'portfolio-display portfolio-circle pink-portfolio-circle'
-              : 'portfolio-circle pink-portfolio-circle'
-          }
-        >
+        <div className="portfolio-circle teal-portfolio-circle">
           <p>This is my portfolio</p>
         </div>
       </div>

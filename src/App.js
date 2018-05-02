@@ -13,7 +13,6 @@ class App extends Component {
     this.state = {
       isMenuClicked: false,
       isScrolling: false,
-      isPortfolioClicked: false,
       emojiArrIndex: 0
     };
   }
@@ -40,15 +39,7 @@ class App extends Component {
               path="/about"
               render={props => <About isScrolling={this.state.isScrolling} onScroll={this.handleScroll} />}
             />
-            <Route
-              path="/portfolio"
-              render={props => (
-                <Portfolio
-                  onPortfolioClick={this.handlePortfolioClick}
-                  isPortfolioClicked={this.state.isPortfolioClicked}
-                />
-              )}
-            />
+            <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
           </div>
         </Router>
@@ -59,12 +50,6 @@ class App extends Component {
   handleMenuClick = () => {
     this.setState(prevState => ({
       isMenuClicked: !prevState.isMenuClicked
-    }));
-  };
-
-  handlePortfolioClick = () => {
-    this.setState(prevState => ({
-      isPortfolioClicked: !prevState.isPortfolioClicked
     }));
   };
 
