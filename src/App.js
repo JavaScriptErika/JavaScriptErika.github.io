@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import P5Wrapper from 'react-p5-wrapper';
 import About from './Components/About';
+import Contact from './Components/Contact';
 import Home from './Components/Home';
 import Menu from './Components/Menu';
 import Portfolio from './Components/Portfolio';
@@ -78,9 +79,4 @@ class App extends Component {
 }
 
 const emojiArray = [...'💜🍰🍪🥨🥞🍭🍬🍿🧡🍩🌮🍫🍕🍦🍱🍧'];
-const Contact = () => (
-  <div>
-    <h2>Contact</h2>
-  </div>
-);
 export default App;

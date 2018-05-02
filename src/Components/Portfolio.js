@@ -4,7 +4,7 @@ const Portfolio = props => {
   return (
     <div>
       <div className="title">
-        <h1 onClick={() => props.onPortfolioClick()}>Portfolio</h1>
+        <h1>Portfolio</h1>
       </div>
       <div className="portfolio-wrap">
         <div className="portfolio-circle pink-portfolio-circle">
