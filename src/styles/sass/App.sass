@@ -70,11 +70,10 @@ a
   padding: .5rem
   border-radius: .5rem
   &:hover
-    background-color: $pink
-    opacity: .5
+    background-color: $teal
   &:active,
   &:visited
-    color: white
+    color: darken($pink, 10%)
 
 
 /* END Elements */
@@ -198,7 +197,7 @@ a
   position: absolute
   border-radius: 50%
   mix-blend-mode: multiply
-  opacity: .7
+  opacity: .6
   width: 200px
   height: 200px
   overflow: hidden
@@ -208,12 +207,12 @@ a
 
 
 .left-circle
-  background: $pink
+  background: $teal
   right: 100%
   transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
 
 .right-circle
-  background: $teal
+  background: $pink
   left: 100%
   transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
 
@@ -233,7 +232,7 @@ a
   margin-left: 50%
   transform-origin: 0 0
   transform: rotate(40deg)
-  font-size: 2rem
+  font-size: 4rem
   h4
     line-height: .9
       
@@ -270,7 +269,8 @@ pre
   justify-content: center
   padding: 3rem 2rem
   background-color: lighten($pink, 20%)
-  opacity: .85
+  opacity: .9
+  color: darken($body-background, 5%)
   h3
     font-size: 1.5rem
     margin-top: 0
@@ -345,3 +345,125 @@ pre
     background-color: $medium-purple
 
 // END Portfolio Component
+
+
+// Contact Component
+
+.world-text
+  margin-top: 50%
+  color: white
+  text-align: center
+  @media screen and (min-width: 426px)
+    margin-top: 18%
+
+.cube-text
+  margin-top: 2rem
+  @media screen and (min-width: 426px)
+    margin-top: 3rem
+    padding: 0 1rem
+
+.cube-nav
+  margin-top: 2rem
+  padding-left: 0
+  @media screen and (min-width: 426px)
+    margin-top: 3rem
+  li
+    margin-top: 1rem
+    list-style-type: none
+  a
+    font-size: 2rem
+
+.cube-nav a,
+.cube-social-media a
+  text-decoration: none
+  color: #eee
+  font-weight: bolder
+
+.cube-container
+  height: 300px
+  margin: 10rem auto
+  perspective: 1200px
+  perspective-origin: 50% -150%
+  transform-origin: center center 150
+  
+.cube
+  cursor: pointer
+  width: 220px
+  color: #eee
+  margin: 0 auto
+  transform-style: preserve-3d
+  position: relative
+  animation: rotate 15s 300ms infinite linear both
+  @media screen and (min-width: 426px)
+    width: 300px
+
+@keyframes rotate
+  0%
+    transform: rotateY(0deg)
+  100%
+    transform: rotateY(360deg)
+  
+.cube:hover
+  animation-play-state: paused
+  
+.side
+  position: absolute
+  display: block
+  width: 220px
+  height: 220px
+  text-align: center
+  background-color: #ccc
+  outline: none
+  box-shadow: inset 0 0px 100px #eee
+  border: 3px solid #fff
+  @media screen and (min-width: 426px)
+    width: 300px
+    height: 300px
+  &.front
+    transform: translateZ(110px)
+    background-color: $medium-purple
+    @media screen and (min-width: 426px)
+      transform: translateZ(150px)
+  &.back
+    transform: translateZ(-110px) rotateY(180deg) 
+    background-color: $pink
+    @media screen and (min-width: 426px)
+      transform: translateZ(-150px) rotateY(180deg) 
+  &.left
+    transform: rotateY(270deg) translateZ(110px)
+    background-color: $teal
+    // backface-visibility: hidden
+    @media screen and (min-width: 426px)
+      transform: rotateY(270deg) translateZ(150px)
+  &.right
+    transform: rotateY(-270deg) translateZ(110px)
+    background-color: $teal
+    // backface-visibility: hidden
+    @media screen and (min-width: 426px)
+      transform: rotateY(-270deg) translateZ(150px)
+  &.top
+    transform: rotateX(90deg) translateZ(110px)
+    background-color: $dark-purple
+    @media screen and (min-width: 426px)
+      transform: rotateX(90deg) translateZ(150px)
+  &.bottom
+    transform: rotateX(270deg) translateZ(110px)
+    background-color: $dark-purple
+    @media screen and (min-width: 426px)
+      transform: rotateX(270deg) translateZ(150px)
+  &.shadow
+    transform: rotateX(270deg) translateZ(210px)
+    background-color: $pink
+    opacity: .3
+
+
+
+
+
+  
+
+
+
+  
+
+  

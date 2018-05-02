@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Circles from './Circles';
-import ccLogo from './../images/cc-logo.svg';
+import ccLogo from './../images/cc-logo.png';
 
 class About extends Component {
   componentDidMount() {
