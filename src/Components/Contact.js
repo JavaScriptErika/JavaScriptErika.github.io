@@ -1,79 +1,28 @@
 import React, { Component } from 'react';
+import CubeSide from './CubeSide';
 
 const Contact = () => (
   <div>
     <div className="title">
       <h1>Contact</h1>
     </div>
-    <div class="cube-container">
-      <div class="cube">
-        <div class="side front">
-          <ul class="cube-nav">
-            <li>
-              <a href="https://www.google.com/">Home</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">About</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Projects</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Contact</a>
-            </li>
-          </ul>
+    <div className="cube-container">
+      <div className="cube">
+        <div className="side front">
+          <CubeSide />
         </div>
-        <div class="side back">
-          <ul>
-            <li>
-              <a href="https://www.google.com/">Home</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">About</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Projects</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Contact</a>
-            </li>
-          </ul>
+        <div className="side back">
+          <CubeSide />
         </div>
-        <div class="side left">
-          <ul class="cube-nav">
-            <li>
-              <a href="https://www.google.com/">Home</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">About</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Projects</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Contact</a>
-            </li>
-          </ul>
+        <div className="side left">
+          <CubeSide />
         </div>
-        <div class="side right">
-          <ul class="cube-nav">
-            <li>
-              <a href="https://www.google.com/">Home</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">About</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Projects</a>
-            </li>
-            <li>
-              <a href="https://www.google.com/">Contact</a>
-            </li>
-          </ul>
+        <div className="side right">
+          <CubeSide />
         </div>
-        <div class="side top" />
-        <div class="side bottom" />
-        <div class="side shadow" />
+        <div className="side top" />
+        <div className="side bottom" />
+        <div className="side shadow" />
       </div>
     </div>
   </div>
