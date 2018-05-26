@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Circles from './Circles';
 import ccLogo from './../images/cc-logo.png';
+import erika from './../images/erika.png'
 import PageTitle from './PageTitle';
 
 class About extends Component {
@@ -16,7 +17,16 @@ class About extends Component {
     return (
       <div>
         <PageTitle titleName={'about'} />
-        <Circles description={`I'm a developer who loves creative code.`} isScrolling={this.props.isScrolling} />
+        <img src={erika} className="about-img" alt="" />
+        <div className="creative-divs">
+          <div className="creative-div-one">I'm a</div>
+          <div className="creative-div-two">developer</div>
+          <div className="creative-div-three">who</div>
+          <div className="creative-div-four">loves</div>
+          <div className="creative-div-five">creative</div>
+          <div className="creative-div-six">code</div>
+        </div>
+        {/* <Circles description={`I'm a developer who loves creative code.`} isScrolling={this.props.isScrolling} /> */}
         <div className="code-about-description">
           <pre>
             <code>

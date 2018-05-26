@@ -64,18 +64,7 @@ class App extends Component {
     });
   };
 
-  handleScroll = e => {
-    if (window.scrollY > 50) {
-      this.setState({
-        isScrolling: true
-      });
-    }
-    if (window.scrollY < 20 || window.scrollY > 1900) {
-      this.setState({
-        isScrolling: false
-      });
-    }
-  };
+  handleScroll = e => window.scrollY > 2000 ? this.setState({ isScrolling: true }) : this.setState({ isScrolling: false })
 }
 
 const emojiArray = [...'💜🍰🍪🥨🥞🍭🍬🍿🧡🍩🌮🍫🍕🍦🍱🍧'];

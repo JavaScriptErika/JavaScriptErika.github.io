@@ -8,8 +8,6 @@ class PageTitle extends Component {
         <h1>{this.props.titleName}</h1>
       </div>
     )
-
-
   }
 }
 
