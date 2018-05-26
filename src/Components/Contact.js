@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import CubeSide from './CubeSide';
+import PageTitle from './PageTitle';
 
 const Contact = () => (
   <div>
-    <div className="title">
-      <h1>Contact</h1>
-    </div>
+    <PageTitle titleName={'contact'} />
     <div className="cube-container">
       <div className="cube">
         <div className="side front">

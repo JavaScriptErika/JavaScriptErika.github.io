@@ -155,9 +155,6 @@ a {
 
 /* End Shared Component Page Styles */
 /* About Component */
-.about {
-  margin-top: 0; }
-
 .about-circle-wrapper {
   margin-top: 10rem;
   position: relative;
@@ -325,6 +322,7 @@ pre {
     background-color: #a327dd; }
 
 .cube-nav {
+  display: flex;
   margin-top: 2rem;
   padding-left: 0; }
   @media screen and (min-width: 426px) {

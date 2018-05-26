@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import PageTitle from './PageTitle'
+
 
 const Portfolio = props => {
   return (
     <div>
-      <div className="title">
-        <h1>Portfolio</h1>
-      </div>
+      <PageTitle titleName={'portfolio'} />
       <div className="portfolio-wrap">
         <div className="portfolio-circle pink-portfolio-circle">
           <p>This is my portfolio title</p>

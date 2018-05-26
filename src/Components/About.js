@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Circles from './Circles';
 import ccLogo from './../images/cc-logo.png';
+import PageTitle from './PageTitle';
 
 class About extends Component {
   componentDidMount() {
@@ -14,9 +15,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <div className="title about">
-          <h1>About</h1>
-        </div>
+        <PageTitle titleName={'about'} />
         <Circles description={`I'm a developer who loves creative code.`} isScrolling={this.props.isScrolling} />
         <div className="code-about-description">
           <pre>
