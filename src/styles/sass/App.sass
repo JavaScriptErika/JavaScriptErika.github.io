@@ -193,7 +193,7 @@ a
   position: absolute
   opacity: .9
   top: 22%
-  left: 0%
+  left: 1%
   width: 100%
   z-index: -1
   @media screen and (min-width: 768px)
@@ -202,7 +202,7 @@ a
   @media screen and (min-width: 1024px)
     width: 40%
   @media screen and (min-width: 1440px)
-    width: 25%
+    width: 27%
 
 .creative-divs
   position: absolute
@@ -222,48 +222,53 @@ a
     font-size: 1.5rem
     font-weight: 600
     color: $body-background
-    transition: transform 600ms cubic-bezier(.87,-.41,.19,1.44)
+    transition: all 500ms cubic-bezier(.87,-.41,.19,1.44)
+    transition-property: transform, box-shadow
     @media screen and (min-width: 768px)
-      height: 5rem
+      height: 3.5rem
       font-size: 2.5rem
       mix-blend-mode: multiply
-  .creative-div-one
-    background-color: $teal
-    width: 7rem
-    border-radius: 1rem
-    &:hover
-      transform: translateY(1.5rem)
-    @media screen and (min-width: 768px)
-      width: 13rem
-  .creative-div-two
-    background-color: $pink
-    width: 12rem
-    &:hover
-      transform: translateX(4rem)
-    @media screen and (min-width: 768px)
-      width: 18rem
-  .creative-div-three
-    background-color: $medium-purple
-    width: 10rem
-    border-radius: 1rem
-    &:hover
-      transform: translateY(-2rem)
-  .creative-div-four
-    background-color: $teal
-    width: 15rem
-    &:hover
-      transform: rotate(15deg)
-  .creative-div-five
-    background-color: lighten($dark-purple, 5%)
-    width: 12rem
-    &:hover
-      transform: translateX(-3rem)
-  .creative-div-six
-    background-color: $pink
-    border-radius: 1rem
-    width: 9rem
-    &:hover
-      transform: translateY(2rem)
+
+.creative-div-one
+  background-color: $teal
+  width: 7rem
+  &:hover
+    transform: translateY(1.5rem)
+    box-shadow: 0 0 100px $teal
+  @media screen and (min-width: 768px)
+    width: 13rem
+.creative-div-two
+  background-color: $pink
+  width: 12rem
+  &:hover
+    transform: translateX(4rem)
+    box-shadow: 0 0 100px $pink
+  @media screen and (min-width: 768px)
+    width: 18rem
+.creative-div-three
+  background-color: $medium-purple
+  width: 10rem
+  &:hover
+    transform: translateY(-2rem)
+    box-shadow: 0 0 100px $medium-purple
+.creative-div-four
+  background-color: $teal
+  width: 15rem
+  &:hover
+    transform: rotate(15deg)
+    box-shadow: 0 0 100px $teal
+.creative-div-five
+  background-color: lighten($dark-purple, 5%)
+  width: 12rem
+  &:hover
+    transform: translateX(-3rem)
+    box-shadow: 0 0 100px $dark-purple
+.creative-div-six
+  background-color: $pink
+  width: 9rem
+  &:hover
+    transform: translateY(2rem)
+    box-shadow: 0 0 100px $pink
 
 .about-circle-wrapper
   margin-top: 10rem

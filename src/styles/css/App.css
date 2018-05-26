@@ -168,7 +168,7 @@ a {
   position: absolute;
   opacity: 0.9;
   top: 22%;
-  left: 0%;
+  left: 1%;
   width: 100%;
   z-index: -1; }
   @media screen and (min-width: 768px) {
@@ -180,7 +180,7 @@ a {
       width: 40%; } }
   @media screen and (min-width: 1440px) {
     .about-img {
-      width: 25%; } }
+      width: 27%; } }
 
 .creative-divs {
   position: absolute;
@@ -202,51 +202,61 @@ a {
     font-size: 1.5rem;
     font-weight: 600;
     color: #fafafa;
-    transition: transform 600ms cubic-bezier(0.87, -0.41, 0.19, 1.44); }
+    transition: all 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition-property: transform, box-shadow; }
     @media screen and (min-width: 768px) {
       .creative-divs > div {
-        height: 5rem;
+        height: 3.5rem;
         font-size: 2.5rem;
         mix-blend-mode: multiply; } }
-  .creative-divs .creative-div-one {
-    background-color: turquoise;
-    width: 7rem;
-    border-radius: 1rem; }
-    .creative-divs .creative-div-one:hover {
-      transform: translateY(1.5rem); }
-    @media screen and (min-width: 768px) {
-      .creative-divs .creative-div-one {
-        width: 13rem; } }
-  .creative-divs .creative-div-two {
-    background-color: #dd27dd;
-    width: 12rem; }
-    .creative-divs .creative-div-two:hover {
-      transform: translateX(4rem); }
-    @media screen and (min-width: 768px) {
-      .creative-divs .creative-div-two {
-        width: 18rem; } }
-  .creative-divs .creative-div-three {
-    background-color: #a327dd;
-    width: 10rem;
-    border-radius: 1rem; }
-    .creative-divs .creative-div-three:hover {
-      transform: translateY(-2rem); }
-  .creative-divs .creative-div-four {
-    background-color: turquoise;
-    width: 15rem; }
-    .creative-divs .creative-div-four:hover {
-      transform: rotate(15deg); }
-  .creative-divs .creative-div-five {
-    background-color: #723de0;
-    width: 12rem; }
-    .creative-divs .creative-div-five:hover {
-      transform: translateX(-3rem); }
-  .creative-divs .creative-div-six {
-    background-color: #dd27dd;
-    border-radius: 1rem;
-    width: 9rem; }
-    .creative-divs .creative-div-six:hover {
-      transform: translateY(2rem); }
+
+.creative-div-one {
+  background-color: turquoise;
+  width: 7rem; }
+  .creative-div-one:hover {
+    transform: translateY(1.5rem);
+    box-shadow: 0 0 100px turquoise; }
+  @media screen and (min-width: 768px) {
+    .creative-div-one {
+      width: 13rem; } }
+
+.creative-div-two {
+  background-color: #dd27dd;
+  width: 12rem; }
+  .creative-div-two:hover {
+    transform: translateX(4rem);
+    box-shadow: 0 0 100px #dd27dd; }
+  @media screen and (min-width: 768px) {
+    .creative-div-two {
+      width: 18rem; } }
+
+.creative-div-three {
+  background-color: #a327dd;
+  width: 10rem; }
+  .creative-div-three:hover {
+    transform: translateY(-2rem);
+    box-shadow: 0 0 100px #a327dd; }
+
+.creative-div-four {
+  background-color: turquoise;
+  width: 15rem; }
+  .creative-div-four:hover {
+    transform: rotate(15deg);
+    box-shadow: 0 0 100px turquoise; }
+
+.creative-div-five {
+  background-color: #723de0;
+  width: 12rem; }
+  .creative-div-five:hover {
+    transform: translateX(-3rem);
+    box-shadow: 0 0 100px #6227dd; }
+
+.creative-div-six {
+  background-color: #dd27dd;
+  width: 9rem; }
+  .creative-div-six:hover {
+    transform: translateY(2rem);
+    box-shadow: 0 0 100px #dd27dd; }
 
 .about-circle-wrapper {
   margin-top: 10rem;
