@@ -375,6 +375,12 @@ pre {
     font-weight: bolder;
     font-size: 1.5rem; }
 
+@media screen and (min-width: 1440px) {
+  .spiral-img {
+    display: block;
+    margin: 0 auto;
+    width: 50%; } }
+
 /*END About Component */
 /*Portfolio Component */
 .portfolio-wrap {
@@ -431,8 +437,12 @@ pre {
 
 .cube-nav a {
   text-decoration: none;
-  color: #eee;
-  font-weight: bolder; }
+  color: #fafafa;
+  font-weight: bolder;
+  transition: color 300ms; }
+  .cube-nav a:hover {
+    background-color: transparent;
+    color: #e1e1e1; }
 
 i.fa.fa-envelope {
   margin: 4rem 3rem; }
@@ -454,7 +464,6 @@ i.fa.fa-envelope {
 .cube {
   cursor: pointer;
   width: 220px;
-  color: #eee;
   margin: 0 auto;
   transform-style: preserve-3d;
   position: relative;

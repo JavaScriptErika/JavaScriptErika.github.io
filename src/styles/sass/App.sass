@@ -384,6 +384,13 @@ pre
     font-weight: bolder
     font-size: 1.5rem
 
+.spiral-img
+  @media screen and (min-width: 1440px)
+    display: block
+    margin: 0 auto
+    width: 50%
+
+
 /*END About Component */
 
 
@@ -447,8 +454,12 @@ pre
 
 .cube-nav a
   text-decoration: none
-  color: #eee
+  color: $body-background
   font-weight: bolder
+  transition: color 300ms
+  &:hover
+    background-color: transparent
+    color: darken($body-background, 10%)
 
 i.fa.fa-envelope
   margin: 4rem 3rem
@@ -465,11 +476,9 @@ i.fa.fa-envelope
     height: 250px
     margin: 3rem auto 20rem
 
-  
 .cube
   cursor: pointer
   width: 220px
-  color: #eee
   margin: 0 auto
   transform-style: preserve-3d
   position: relative

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Circles from './Circles';
 import ccLogo from './../images/cc-logo.png';
 import erika from './../images/erika.png'
+import spiral from './../images/spiral-text.svg'
 import PageTitle from './PageTitle';
 
 class About extends Component {
@@ -126,7 +127,8 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <Circles description={`Code is art, the world's my canvas`} isScrolling={this.props.isScrolling} />
+        <img src={spiral} className="spiral-img" alt="" />
+        {/* <Circles description={`Code is art, the world's my canvas`} isScrolling={this.props.isScrolling} /> */}
       </div>
     );
   }
