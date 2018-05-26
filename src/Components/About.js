@@ -26,7 +26,6 @@ class About extends Component {
           <div className="creative-div-five">creative</div>
           <div className="creative-div-six">code</div>
         </div>
-        {/* <Circles description={`I'm a developer who loves creative code.`} isScrolling={this.props.isScrolling} /> */}
         <div className="code-about-description">
           <pre>
             <code>

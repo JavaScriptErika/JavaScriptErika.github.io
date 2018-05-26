@@ -5,11 +5,6 @@ const CubeSide = () => {
   return (
     <ul className="cube-nav">
       <li>
-        <a href="mailto:erikajritter@gmail.com">
-          <i className="fa fa-envelope" />
-        </a>
-      </li>
-      <li>
         <a href="https://twitter.com/javascripterika">
           <i className="fa fa-twitter" />
         </a>

@@ -19,7 +19,15 @@ const Contact = () => (
         <div className="side right">
           <CubeSide />
         </div>
-        <div className="side top" />
+        <div className="side top">
+          <ul className="cube-nav">
+            <li>
+              <a href="mailto:erikajritter@gmail.com">
+                <i className="fa fa-envelope" />
+              </a>
+            </li>
+          </ul>
+        </div>
         <div className="side bottom" />
         <div className="side shadow" />
       </div>
