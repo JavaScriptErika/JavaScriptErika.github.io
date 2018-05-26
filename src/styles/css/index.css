@@ -18,7 +18,8 @@ canvas {
   z-index: -1; }
 
 svg {
-  position: absolute; }
+  position: absolute;
+  z-index: -2; }
 
 h1 {
   margin-bottom: 0.5rem;
@@ -60,9 +61,13 @@ a {
   filter: url("#goo");
   position: relative;
   width: 100%;
-  height: 200px;
-  margin: 3rem auto 0rem;
-  text-align: center; }
+  height: 4rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  background: turquoise; }
+
+#hamburger {
+  font-size: 2.5rem; }
 
 .blob {
   cursor: pointer;
@@ -151,10 +156,34 @@ a {
 
 .title {
   padding: 0.5rem 10rem;
-  background-color: #4bd5c7; }
+  background-color: #4bd5c7;
+  transition: box-shadow 300ms ease-in; }
+  .title:hover {
+    box-shadow: 0 0 100px turquoise; }
 
 .home-title {
-  background-color: transparent; }
+  color: #fafafa; }
+  .home-title h1 {
+    text-shadow: unset;
+    mix-blend-mode: multiply;
+    background-color: #a327dd;
+    padding-right: 1rem;
+    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition-property: transform, box-shadow; }
+    .home-title h1:hover {
+      transform: translateY(3rem);
+      box-shadow: 0 0 100px #a327dd; }
+  .home-title h4 {
+    text-shadow: unset;
+    mix-blend-mode: multiply;
+    background-color: #dd27dd;
+    display: inline-block;
+    padding: 1rem;
+    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition-property: transform, box-shadow; }
+    .home-title h4:hover {
+      transform: rotate(10deg);
+      box-shadow: 0 0 100px #dd27dd; }
   @media screen and (min-width: 768px) {
     .home-title {
       padding-left: 5rem; } }
@@ -166,9 +195,9 @@ a {
 /* About Component */
 .about-img {
   position: absolute;
-  opacity: 0.9;
+  opacity: 0.9 !important;
   top: 22%;
-  left: 0%;
+  left: 1%;
   width: 100%;
   z-index: -1; }
   @media screen and (min-width: 768px) {
