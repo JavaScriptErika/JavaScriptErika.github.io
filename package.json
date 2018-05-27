@@ -2,8 +2,10 @@
   "name": "portfolio-2018",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://javascripterika.github.io/",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-p5-wrapper": "^0.0.4",
@@ -15,6 +17,8 @@
     "start": "react-scripts start",
     "build": "yarn sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject",
     "sass": "sass --watch src/styles/sass:src/styles/css",
     "sass:build": "sass --update src/styles/sass:src/styles/css"
