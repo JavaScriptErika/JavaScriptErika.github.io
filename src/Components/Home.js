@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Home extends Component {
   componentDidMount() {
-    this.interval = setInterval(this.props.setemojiIndex, 3000);
+    this.interval = setInterval(this.props.setemojiIndex, 2000);
   }
 
   componentWillUnmount() {
