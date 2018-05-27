@@ -101,7 +101,7 @@ class About extends Component {
                 We curate content/resources, hold CSS/SVG/Canvas creative code challenges voted on by members, and inspire
                 each other to become better Cascading Coders.
             </h3>
-              <div class="join-cc-wrap">
+              <div className="join-cc-wrap">
                 <div className="join-cc-info">
                   <h3>👥 Join Us</h3>
                   <ul>

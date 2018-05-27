@@ -474,10 +474,8 @@ pre
   right: 0
   height: 100%
   width: 100%
-  opacity: 0
   border-radius: 50%
-  overflow: hidden
-  transition: opacity .3s ease-out
+  display: none
   background-color: $dark-purple
   color: $body-background
   font-weight: 600
@@ -487,13 +485,18 @@ pre
 .overlay
   p
     padding: 0 1.5rem
-    margin-bottom: 2rem
-    font-size: 1.4rem
+    margin-bottom: 1rem
+    font-size: 1rem
+    @media screen and (min-width: 1440px)
+      margin-bottom: 2rem
+      font-size: 1.4rem
+  h2
+    padding-top: 3rem
   a:hover
     color: $body-background
 
 .portfolio-circle:hover .overlay
-  opacity: 1
+  display: block
 
 .pink-portfolio-circle
   background-color: lighten($pink, 20%)
