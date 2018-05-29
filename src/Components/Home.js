@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home-title">
-        <h1>Erika Ritter</h1>
+        <h1>Erika Ritter!</h1>
         <h4>
           I <span id="emoji">{this.props.emojiArr[this.props.emojiArrI]}</span> the web &amp; JS
         </h4>
