@@ -7,7 +7,7 @@ const Menu = props => {
       <div className="gooey-effect-wrapper">
         <div className="nav-wrap" onClick={() => props.onMenuClick()}>
           <div className={props.isClicked ? 'blob' : 'blob menuPulse'}>
-            <p id='hamburger'><span role="img" aria-label="hamburger">🍔</span></p>
+            <p><span className="hamburger" role="img" aria-label="hamburger">🍔</span>menu</p>
           </div>
           <div className={props.isClicked ? 'menuActiveLeft blob home' : 'blob home'}>
             <Link to="/">home</Link>

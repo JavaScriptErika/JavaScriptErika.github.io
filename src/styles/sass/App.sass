@@ -91,7 +91,8 @@ a
   text-align: center
   background: $menu-background
 
-#hamburger
+.hamburger
+  display: block
   font-size: 2.5rem
 
 .blob
@@ -110,7 +111,7 @@ a
   a,
   p
     display: block
-    margin-top: 3rem
+    margin-top: 1.5rem
     font-size: 1.2rem
     font-weight: 600
     color: $menu-font-color
@@ -121,8 +122,8 @@ a
     a,
     p
       font-size: 1.5rem
-      margin-top: 3.5rem
   @media screen and (min-width: 1024px)
+    margin-top: 2rem
     left: 45%
 
 .home a,
@@ -451,9 +452,10 @@ pre
   display: inline-flex
   width: 22rem
   height: 22rem
-  margin: 5rem auto
+  margin: 2rem auto
   transform-style: preserve-3d
   transition: transform 600ms cubic-bezier(.75,-0.5,0,1.75)
+
 
 .portfolio-circle,
 .back
@@ -477,6 +479,7 @@ pre
   @media screen and (min-width: 1440px)
     width: 30rem
     height: 30rem
+    margin: 1.5rem
 
 .portfolio-circle
   align-items: center
