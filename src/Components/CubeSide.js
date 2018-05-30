@@ -10,7 +10,7 @@ const CubeSide = () => {
         </a>
       </li>
       <li>
-        <a href="www.linkedin.com/in/erika-ritter">
+        <a href="https://www.linkedin.com/in/erika-ritter/">
           <i className="fa fa-linkedin" />
         </a>
       </li>
