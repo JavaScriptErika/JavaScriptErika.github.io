@@ -163,34 +163,44 @@ a {
 
 .home-title {
   color: #fafafa; }
-  .home-title h1 {
-    text-shadow: unset;
-    mix-blend-mode: multiply;
-    background-color: #a327dd;
-    padding-right: 1rem;
-    margin-bottom: 0;
-    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-    transition-property: transform, box-shadow; }
-    .home-title h1:hover {
-      transform: translateY(3rem);
-      box-shadow: 0 0 100px #a327dd; }
-  .home-title h4 {
-    text-shadow: unset;
-    mix-blend-mode: multiply;
-    background-color: #dd27dd;
-    display: inline-block;
-    padding: 1rem;
-    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
-    transition-property: transform, box-shadow; }
-    .home-title h4:hover {
-      transform: rotate(10deg);
-      box-shadow: 0 0 100px #dd27dd; }
   @media screen and (min-width: 768px) {
     .home-title {
       padding-left: 5rem; } }
   .home-title span {
     width: 4rem;
     display: inline-block; }
+  .home-title h1 {
+    text-shadow: unset;
+    mix-blend-mode: multiply;
+    background-color: #a327dd;
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition-property: transform, box-shadow;
+    font-size: 3.5rem; }
+    .home-title h1:hover {
+      transform: translateY(2rem);
+      box-shadow: 0 0 100px #a327dd; }
+    @media screen and (min-width: 768px) {
+      .home-title h1 {
+        display: block;
+        font-size: 7rem; } }
+  .home-title h4 {
+    text-shadow: unset;
+    mix-blend-mode: multiply;
+    background-color: #dd27dd;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+    transition: all 1s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition-property: transform, box-shadow; }
+    @media screen and (min-width: 768px) {
+      .home-title h4 {
+        font-size: 3.5rem; } }
+    .home-title h4:hover {
+      transform: rotate(10deg);
+      box-shadow: 0 0 100px #dd27dd; }
 
 /* End Shared Component Page Styles */
 /* About Component */
@@ -199,7 +209,7 @@ a {
   opacity: 0.9 !important;
   top: 22%;
   left: 1%;
-  width: 100%;
+  width: 99%;
   z-index: -1; }
   @media screen and (min-width: 768px) {
     .about-img {
@@ -398,22 +408,22 @@ pre {
   display: inline-flex;
   width: 22rem;
   height: 22rem;
-  margin: 5rem 0;
+  margin: 5rem auto;
   transform-style: preserve-3d;
-  transition: transform 600ms cubic-bezier(0.75, -0.5, 0, 1.75);
-  margin-right: 1rem; }
+  transition: transform 600ms cubic-bezier(0.75, -0.5, 0, 1.75); }
 
 .portfolio-circle,
 .back {
   cursor: pointer;
   position: absolute;
-  width: 22rem;
-  height: 22rem;
+  width: 95%;
+  height: 95%;
   top: 0;
   left: 0;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 0.5rem;
   transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .circle,
@@ -429,7 +439,8 @@ pre {
 
 .portfolio-circle {
   align-items: center;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  text-shadow: 0px 2px 3px rgba(63, 63, 63, 0.7); }
   .portfolio-circle img {
     width: 60%;
     border-radius: 1rem;
@@ -445,20 +456,28 @@ pre {
   transform: rotateY(180deg);
   backface-visibility: hidden; }
   .back a {
-    color: #dd27dd; }
+    display: inline-block;
+    color: #e453e4;
+    border: 2px solid turquoise;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    box-shadow: 2px 2px 8px #262626;
+    padding: 0.6rem; }
   .back a:hover {
     color: #fafafa; }
   .back p {
-    margin: 0 auto;
-    width: 80%;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    width: 70%;
     font-size: 1rem; }
     @media screen and (min-width: 1440px) {
       .back p {
-        margin-bottom: 2rem;
+        width: 80%;
+        margin-bottom: 1rem;
         font-size: 1.3rem; } }
   .back h2 {
-    padding-top: 3rem; }
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    display: inline-block; }
 
 .circle:hover .portfolio-circle {
   transform: rotateY(180deg); }
@@ -553,11 +572,11 @@ i.fa.fa-envelope {
     @media screen and (min-width: 426px) {
       .side.front {
         transform: translateZ(150px); } }
-  .side.back {
+  .side.rear {
     transform: translateZ(-110px) rotateY(180deg);
     background-color: #dd27dd; }
     @media screen and (min-width: 426px) {
-      .side.back {
+      .side.rear {
         transform: translateZ(-150px) rotateY(180deg); } }
   .side.left {
     transform: rotateY(270deg) translateZ(110px);

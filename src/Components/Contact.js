@@ -12,7 +12,7 @@ const Contact = () => (
           <div className="side front">
             <CubeSide />
           </div>
-          <div className="side back">
+          <div className="side rear">
             <CubeSide />
           </div>
           <div className="side left">

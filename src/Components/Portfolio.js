@@ -92,7 +92,7 @@ const Portfolio = props => {
           </div>
           <div className="circle">
             <div className="portfolio-circle teal-portfolio-circle">
-              <h2>Monster Cursor Follow</h2>
+              <h2>Cursor Follow</h2>
               <img src={monster} alt="pure css of naru and ori" />
             </div>
             <div className="back">
@@ -109,7 +109,7 @@ const Portfolio = props => {
         <Bounce left>
           <div className="circle">
             <div className="portfolio-circle purple-portfolio-circle">
-              <h2>monoLambda Landing Page</h2>
+              <h2>Landing Page</h2>
               <img src={mono} alt="hero screenshot of monoLambda landing page" />
             </div>
             <div className="back">
