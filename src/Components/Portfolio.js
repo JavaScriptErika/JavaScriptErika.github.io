@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PageTitle from './PageTitle';
 import memory from './../images/memory-game.png';
 import weather from './../images/weather-project.png';
@@ -24,7 +24,7 @@ const Portfolio = props => {
               <img src={memory} alt="memory game screenshot" />
             </div>
             <div className="back">
-              <h2>Vanilla JS 🍦 &amp; CSS 🎨</h2>
+              <h2>Vanilla JS <span role="img" aria-label="ice cream cone">🍦</span> &amp; CSS <span role="img" aria-label="paint palette">🎨</span></h2>
               <p><a href="https://javascripterika.github.io/memory-game/">Play Game</a></p>
               <p><a href="https://github.com/JavaScriptErika/memory-game">Check out Code</a></p>
               <p>Match 16 cards with their corresponding emojis. I constantly thought about ideal

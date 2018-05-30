@@ -102,30 +102,30 @@ class About extends Component {
             </h3>
               <div className="join-cc-wrap">
                 <div className="join-cc-info">
-                  <h3>👥 Join Us</h3>
+                  <h3><span role="img" aria-label="silhouette">👥</span> Join Us</h3>
                   <ul>
                     <li>
-                      <a href="https://discordapp.com/invite/5P3kYbP" target="_blank">
+                      <a href="https://discordapp.com/invite/5P3kYbP" target="_blank" rel="noopener noreferrer">
                         Discord
                     </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/groups/1752972351391061/" target="_blank">
+                      <a href="https://www.facebook.com/groups/1752972351391061/" target="_blank" rel="noopener noreferrer">
                         FB Group
                     </a>
                     </li>
                   </ul>
                 </div>
                 <div className="join-cc-info">
-                  <h3>💜 & Follow</h3>
+                  <h3><span role="img" aria-label="purple heart">💜</span> & Follow</h3>
                   <ul>
                     <li>
-                      <a href="https://twitter.com/cascadingcoders" target="_blank">
+                      <a href="https://twitter.com/cascadingcoders" target="_blank" rel="noopener noreferrer">
                         Twitter
                     </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/CascadingCoders/" target="_blank">
+                      <a href="https://www.facebook.com/CascadingCoders/" target="_blank" rel="noopener noreferrer">
                         FB Page
                     </a>
                     </li>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CubeSide from './CubeSide';
 import PageTitle from './PageTitle';
 import Bounce from 'react-reveal/Bounce';
