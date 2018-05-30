@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div>
         <P5Wrapper sketch={Sketch} />
-        <Router>
+        <Router basename='test'>
           <div>
             <Menu onMenuClick={this.handleMenuClick} isClicked={this.state.isMenuClicked} />
             <Switch>
@@ -39,7 +39,12 @@ class App extends Component {
               />
               <Route
                 path="/about"
-                render={props => <About isScrolling={this.state.isScrolling} onScroll={this.handleScroll} />}
+                render={props => (
+                  <About
+                    isScrolling={this.state.isScrolling}
+                    onScroll={this.handleScroll}
+                  />
+                )}
               />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
