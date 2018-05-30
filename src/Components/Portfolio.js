@@ -18,10 +18,12 @@ const Portfolio = props => {
       <PageTitle titleName={'portfolio'} />
       <div className="portfolio-wrap">
         <Bounce left>
-          <div className="portfolio-circle purple-portfolio-circle">
-            <h2>Memory Game</h2>
-            <img src={memory} alt="memory game screenshot" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle purple-portfolio-circle">
+              <h2>Memory Game</h2>
+              <img src={memory} alt="memory game screenshot" />
+            </div>
+            <div className="back">
               <h2>Vanilla JS 🍦 &amp; CSS 🎨</h2>
               <p><a href="https://javascripterika.github.io/memory-game/">Play Game</a></p>
               <p><a href="https://github.com/JavaScriptErika/memory-game">Check out Code</a></p>
@@ -30,48 +32,56 @@ const Portfolio = props => {
               </p>
             </div>
           </div>
-          <div className="portfolio-circle teal-portfolio-circle">
-            <h2>Weather API</h2>
-            <img src={weather} alt="weather app screenshot displaying condtions" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle teal-portfolio-circle">
+              <h2>Weather API</h2>
+              <img src={weather} alt="weather app screenshot displaying condtions" />
+            </div>
+            <div className="back">
               <h2>jQuery &amp; AJAX</h2>
-              <p><a href="https://javascripterika.github.io/WeatherAPI/">View Weather Condtions</a></p>
+              <p><a href="https://javascripterika.github.io/WeatherAPI/">View Weather Conditions</a></p>
               <p><a href="https://github.com/JavaScriptErika/WeatherAPI">Check out Code</a></p>
               <p>Using the browser's geolocation, coordinates are parsed by Google Maps Geocoding
                 API and passed to Dark Sky API.
               </p>
             </div>
           </div>
-          <div className="portfolio-circle pink-portfolio-circle">
-            <h2>Pixel Art Maker</h2>
-            <img src={pixel} alt="pixel art app displayed showing grid" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle pink-portfolio-circle">
+              <h2>Pixel Art Maker</h2>
+              <img src={pixel} alt="pixel art app displayed showing grid" />
+            </div>
+            <div className="back">
               <h2>Vanilla JS, Sass, Webpack</h2>
               <p><a href="https://codepen.io/JavaScriptErika/full/ppBMMm/">Create Art</a></p>
               <p><a href="https://github.com/JavaScriptErika/pixelMaker">Check out Code</a></p>
-              <p>Make pixel art on a dynamic grid. Implementing a webpack environment was an
-                added challenge I gave myself.
+              <p>Make pixel art on a dynamic grid. Developed in a webpack environment.
               </p>
             </div>
           </div>
         </Bounce>
+
         <Bounce right>
-          <div className="portfolio-circle pink-portfolio-circle">
-            <h2>JS Trivia App</h2>
-            <img src={trivia} alt="trivia app screenshot example" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle pink-portfolio-circle">
+              <h2>JS Trivia App</h2>
+              <img src={trivia} alt="trivia app screenshot example" />
+            </div>
+            <div className="back">
               <h2>React & Milligram</h2>
               <p><a href="https://codepen.io/JavaScriptErika/full/zWmVmO/">Take Quiz</a></p>
               <p><a href="https://codepen.io/JavaScriptErika/pen/zWmVmO">Check out Code</a></p>
-              <p>Test your JS knowledge! I dynamically generated the display of possible
-                answers depending on the number of choices in the data.
+              <p>Test your JS knowledge! The display of possible
+                answers are dynamically generated depending on the number of choices in the data.
               </p>
             </div>
           </div>
-          <div className="portfolio-circle purple-portfolio-circle">
-            <h2>Ori & the Blind Forest</h2>
-            <img src={ori} alt="pure css of naru and ori" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle purple-portfolio-circle">
+              <h2>Ori & the Blind Forest</h2>
+              <img src={ori} alt="pure css of naru and ori" />
+            </div>
+            <div className="back">
               <h2>Pure CSS</h2>
               <p><a href="https://codepen.io/JavaScriptErika/full/WMeEwr/">View Project</a></p>
               <p><a href="https://codepen.io/JavaScriptErika/pen/WMeEwr/">Check out Code</a></p>
@@ -80,10 +90,12 @@ const Portfolio = props => {
               </p>
             </div>
           </div>
-          <div className="portfolio-circle teal-portfolio-circle">
-            <h2>Monster Cursor Follow</h2>
-            <img src={monster} alt="pure css of naru and ori" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle teal-portfolio-circle">
+              <h2>Monster Cursor Follow</h2>
+              <img src={monster} alt="pure css of naru and ori" />
+            </div>
+            <div className="back">
               <h2>Vanilla JS & Sass</h2>
               <p><a href="https://codepen.io/JavaScriptErika/full/eyrPjB/">Get Followed</a></p>
               <p><a href="https://codepen.io/JavaScriptErika/pen/eyrPjB">Check out Code</a></p>
@@ -93,11 +105,14 @@ const Portfolio = props => {
             </div>
           </div>
         </Bounce>
+
         <Bounce left>
-          <div className="portfolio-circle purple-portfolio-circle">
-            <h2>monoLambda Landing Page</h2>
-            <img src={mono} alt="hero screenshot of monoLambda landing page" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle purple-portfolio-circle">
+              <h2>monoLambda Landing Page</h2>
+              <img src={mono} alt="hero screenshot of monoLambda landing page" />
+            </div>
+            <div className="back">
               <h2>Vanilla JS, Preact & Sass</h2>
               <p><a href="https://monolambda.com/">View Online</a></p>
               <p><a href="https://github.com/monolambda/monolambda">Check out Code</a></p>
@@ -106,22 +121,26 @@ const Portfolio = props => {
               </p>
             </div>
           </div>
-          <div className="portfolio-circle teal-portfolio-circle">
-            <h2>Registration App</h2>
-            <img src={register} alt="screenshot of registration app" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle teal-portfolio-circle">
+              <h2>Registration App</h2>
+              <img src={register} alt="screenshot of registration app" />
+            </div>
+            <div className="back">
               <h2>React and Milligram</h2>
               <p><a href="https://codepen.io/JavaScriptErika/full/rdQqWm/">Get Registered</a></p>
               <p><a href="https://codepen.io/JavaScriptErika/pen/rdQqWm">Check out Code</a></p>
-              <p>Static Registration app using a form to get familiar with controlled component
+              <p>Registration app uses a form in React to display controlled component
                 functionality.
               </p>
             </div>
           </div>
-          <div className="portfolio-circle pink-portfolio-circle">
-            <h2>Veterinary Website</h2>
-            <img src={hartman} alt="screenshot of hartman veterinary website" />
-            <div className="overlay">
+          <div className="circle">
+            <div className="portfolio-circle pink-portfolio-circle">
+              <h2>Veterinary Website</h2>
+              <img src={hartman} alt="screenshot of hartman veterinary website" />
+            </div>
+            <div className="back">
               <h2>Wordpress</h2>
               <p><a href="http://hartmanvet.com/">View Website</a></p>
               <p>Website redesign implementing CSS and PHP for structure
@@ -131,7 +150,7 @@ const Portfolio = props => {
           </div>
         </Bounce>
       </div>
-    </div>
+    </div >
   );
 };
 
