@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <P5Wrapper sketch={Sketch} />
+        <P5Wrapper sketch={Sketch} /> 
         <Router>
           <div>
             <Menu onMenuClick={this.handleMenuClick} isClicked={this.state.isMenuClicked} />

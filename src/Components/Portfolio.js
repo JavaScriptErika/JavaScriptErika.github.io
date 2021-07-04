@@ -2,8 +2,8 @@ import React from 'react';
 import PageTitle from './PageTitle';
 import memory from './../images/memory-game.png';
 import weather from './../images/weather-project.png';
-import pixel from './../images/pixel-maker.png';
-import trivia from './../images/trivia-app.png';
+import pixel from './../images/pixel-maker.PNG';
+import trivia from './../images/trivia-app.PNG';
 import ori from './../images/ori.png';
 import mono from './../images/monolambda.png';
 import monster from './../images/monster.png';
@@ -46,7 +46,7 @@ const Portfolio = props => {
               </p>
             </div>
           </div>
-          <div className="circle">
+          {/* <div className="circle">
             <div className="portfolio-circle pink-portfolio-circle">
               <h2>Pixel Art Maker</h2>
               <img src={pixel} alt="pixel art app displayed showing grid" />
@@ -58,7 +58,7 @@ const Portfolio = props => {
               <p>Make pixel art on a dynamic grid. Developed in a webpack environment.
               </p>
             </div>
-          </div>
+          </div> */}
         </Bounce>
 
         <Bounce right>
@@ -150,7 +150,7 @@ const Portfolio = props => {
           </div>
         </Bounce>
       </div>
-    </div >
+    </div>
   );
 };
 

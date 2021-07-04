@@ -1,4 +1,4 @@
-export default function sketch(p) {
+export default function Sketch(p) {
   const balls = [];
 
   p.setup = () => {
